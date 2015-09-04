@@ -31,4 +31,10 @@ Company Name:twitter
 
    - Open the {company}.csv file under the folder created with the same name as company.
 
+### Walkthrough
 
+![alt tag](http://i.imgur.com/xWj8htp.gif)
+ _____
+![alt tag](http://i.imgur.com/qBdhQJ9.gif)   
+_____
+![alt tag](http://i.imgur.com/3yUZOnS.gif)   
