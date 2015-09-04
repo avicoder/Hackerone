@@ -2,6 +2,7 @@ from lxml.html import parse
 from urllib2 import urlopen, Request
 import os
 import time
+import os.path
 
 def seperator():
     print  "----------------------------------------------"
@@ -62,12 +63,14 @@ headers = { 'User-Agent' : 'Mozilla/5.0' }
 if __name__=="__main__":
     try:
         companyName = raw_input("Company Name: ")
-        f=open(companyName + "\\" + companyName  + ".csv", "w+")
-        f.close
+        path=companyName + "\\" + companyName  + ".csv"
+        if os.path.isfile(path): 
+            f=open(companyName + "\\" + companyName  + ".csv", "w+")
+            f.close
         main(companyName)
 
         print "\n\nDone"
-        print "\n\ Data saved in CSV file, open it with your favorite Text Editor"
+        print "\n Data saved in CSV file, open it with your favorite Text Editor"
     except KeyboardInterrupt:
         print "[*] Stopping"
         time.sleep(1)
