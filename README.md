@@ -1,2 +1,34 @@
-# Hackerone
-Hackerone disclosed report URL Aggregator 
+# HackerOne Vulnerability Report Disclosure Aggregator
+
+Basic Functionality:
+
+ * Company wise disclosure report
+ * Export to CSV file
+
+
+
+### Usage
+
+   - Install python dependencies (for windows and Linux):
+
+```
+pip install cssselect
+pip install lxml
+pip install urllib2
+```
+
+   - Run hack1.py file
+```
+python hack1.py
+```
+
+   - Enter the company name (handle) that you want to aggregate the disclosed reports
+
+```
+hack1.py
+Company Name:twitter
+```
+
+   - Open the {company}.csv file under the folder created with the same name as company.
+
+
