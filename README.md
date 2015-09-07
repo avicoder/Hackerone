@@ -1,4 +1,4 @@
-# HackerOne Vulnerability Report Disclosure Aggregator
+# HackerOne Disclosed Vulnerability Reports Aggregator
 
 Basic Functionality:
 
