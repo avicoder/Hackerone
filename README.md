@@ -38,3 +38,7 @@ Company Name:twitter
 ![alt tag](http://i.imgur.com/qBdhQJ9.gif)   
 _____
 ![alt tag](http://i.imgur.com/3yUZOnS.gif)   
+
+
+## Licence 
+####WTFPL 3.0
