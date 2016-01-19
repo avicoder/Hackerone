@@ -38,12 +38,12 @@ def main(companyName):
             if "rewarded" in content:
                 relevantElements.append(element)
                 name = content[content.index("rewarded") + 1]
-                bounty= content[content.index("rewarded") + 4]
                 url = ""
                 if "for" in content:
 					url = "https://hackerone.com" + x[3].attrib['href']
 					vulnerablity= ' '.join(content[8:])
-					listOne.append([name,url,vulnerablity,bounty])
+					bounty= content[content.index("rewarded") + 4]
+                	listOne.append([name,url,vulnerablity,bounty])
             element += 1
         element = 0
         for y in tree.cssselect("a.hacktivity-timestamp-link"):
