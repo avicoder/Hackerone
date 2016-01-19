@@ -57,7 +57,7 @@ def main(companyName):
         blarg = 0
         for arr in listOne:
             with open(companyName + "\\" + companyName  + ".csv", "a") as myfile:
-                myfile.write('"' + arr[0] + '"' + ',' + '"' + dates[blarg] + '"' + ',' + '"' + arr[1] + '"' + '\n')
+                myfile.write('"' + arr[0] + '"' + ',' + '"' + dates[blarg] + '"' + ',' + '"' + arr[1] + '"' + ','  + '"' + arr[2] + '"' + '\n')
             #print '"' + arr[0] + '"' + ','  + '"' + dates[blarg] + '"' + ',' + '"' + arr[1] + '"'  + ',' + '"' + arr[2] + '"'
             print 'Vulnerablity Name: "' + arr[2] + '"'
             print "Hunter: " + arr[0]
