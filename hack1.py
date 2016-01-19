@@ -34,13 +34,16 @@ def main(companyName):
         dates = []
         for x in mydiv:
             content = x.text_content().split()
+
             if "rewarded" in content:
                 relevantElements.append(element)
                 name = content[content.index("rewarded") + 1]
+                bounty= content[content.index("rewarded") + 4]
                 url = ""
                 if "for" in content:
 					url = "https://hackerone.com" + x[3].attrib['href']
-					listOne.append([name,url])
+					vulnerablity= ' '.join(content[8:])
+					listOne.append([name,url,vulnerablity,bounty])
             element += 1
         element = 0
         for y in tree.cssselect("a.hacktivity-timestamp-link"):
@@ -55,7 +58,13 @@ def main(companyName):
         for arr in listOne:
             with open(companyName + "\\" + companyName  + ".csv", "a") as myfile:
                 myfile.write('"' + arr[0] + '"' + ',' + '"' + dates[blarg] + '"' + ',' + '"' + arr[1] + '"' + '\n')
-            print '"' + arr[0] + '"' + ','  + '"' + dates[blarg] + '"' + ',' + '"' + arr[1] + '"'
+            #print '"' + arr[0] + '"' + ','  + '"' + dates[blarg] + '"' + ',' + '"' + arr[1] + '"'  + ',' + '"' + arr[2] + '"'
+            print 'Vulnerablity Name: "' + arr[2] + '"'
+            print "Hunter: " + arr[0]
+            print "Date: " + dates[blarg]
+            print "URL: " + arr[1]
+            print "Bounty: " + arr[3]
+            print "\n"
             blarg += 1
 headers = { 'User-Agent' : 'Mozilla/5.0' }
 
