@@ -42,8 +42,8 @@ def main(companyName):
                 if "for" in content:
 					url = "https://hackerone.com" + x[3].attrib['href']
 					vulnerablity= ' '.join(content[8:])
-					bounty= content[content.index("rewarded") + 4]
-                	listOne.append([name,url,vulnerablity,bounty])
+					#bounty= content[content.index("rewarded") + 4]
+					listOne.append([name,url,vulnerablity])
             element += 1
         element = 0
         for y in tree.cssselect("a.hacktivity-timestamp-link"):
@@ -63,7 +63,7 @@ def main(companyName):
             print "Hunter: " + arr[0]
             print "Date: " + dates[blarg]
             print "URL: " + arr[1]
-            print "Bounty: " + arr[3]
+            #print "Bounty: " + arr[3]
             print "\n"
             blarg += 1
 headers = { 'User-Agent' : 'Mozilla/5.0' }
