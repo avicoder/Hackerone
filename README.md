@@ -1,3 +1,7 @@
+# No more support
+
+Alternative : https://github.com/infosec-au/bugbountydash
+
 # HackerOne Disclosed Vulnerability Reports Aggregator
 
 Basic Functionality:
