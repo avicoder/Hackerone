@@ -1,8 +1,6 @@
-# No more support
-
-Alternative : https://github.com/infosec-au/bugbountydash
-
 # HackerOne Disclosed Vulnerability Reports Aggregator
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)  [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)]() [![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/vjex/hackerone/issues/)
+
 
 Basic Functionality:
 
@@ -45,7 +43,7 @@ _____
 
 
 ## Licence 
-####WTFPL 3.0
+#### WTFPL 3.0
 
 ##  Contributing
 
